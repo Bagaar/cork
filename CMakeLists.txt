@@ -39,3 +39,6 @@ target_link_libraries(cork ${PROJECT_LINK_LIBRARIES})
 
 add_executable(off2obj ${PROJECT_SOURCE_FILES} "src/off2obj.cpp")
 target_link_libraries(off2obj ${PROJECT_LINK_LIBRARIES})
+
+install(TARGETS cork DESTINATION "bin")
+install(TARGETS off2obj DESTINATION "bin")
